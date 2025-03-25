@@ -8,13 +8,11 @@ body {
 header {
   width: 100%;
   height: 100px;
-  box-shadow: rgba(0,0,0,0.5) 0px 4px 12px;
   position: relative;
   background-color: rgb(40, 40, 105);
 }
 header .wrapper {
-  max-width: 1300px;
-  margin: auto;
+  max-width: 100%;
   display: flex;
   align-items: center;
   height: 100%;
@@ -23,6 +21,7 @@ header .wrapper {
   background: rgb(40, 40, 105);
   z-index: 10;
   position: relative;
+  box-shadow: rgba(0,0,0,0.5) 0px 4px 12px;
 }
 header .wrapper-logo {
   width: 50px;
@@ -68,7 +67,7 @@ header nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-350px);
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -94,7 +93,6 @@ header nav a {
     justify-content: flex-end;
     padding-right: 60px;
     transform: translate(-50%, -150%);
-    max-width: 1300px;
     background: none;
     box-shadow: none;
   }
